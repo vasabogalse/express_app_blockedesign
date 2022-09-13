@@ -18250,7 +18250,7 @@ input:focus {
 /* Typography */
 body {
   font-size: 0.937rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "open-sans";
   font-weight: initial;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
