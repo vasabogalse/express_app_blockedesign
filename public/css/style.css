@@ -18644,6 +18644,7 @@ html {
 
 .home {
   background: url("../images/banner-bg.svg");
+  fill: linear-gradient(90deg, rgba(242,46,118,1) 0%, rgba(62,181,230,1) 100%);
   background-repeat-y: no-repeat;
   background-position: 0 -50px;
   padding-top: 103px;
