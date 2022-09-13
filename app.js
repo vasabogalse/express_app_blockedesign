@@ -7,11 +7,7 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const createProjectRouter = require('./routes/createProject');
-
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var createProjectRouter = require('./routes/createProject');
-var assignStateRouter = require('./routes/assignState');
+const assignStateRouter = require('./routes/assignState');
 //const { hasSubscribers } = require('diagnostics_channel');
 const directoryPartials = path.join(__dirname, 'partials');
 
