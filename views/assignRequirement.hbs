@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>header}}
+
+<body>
+	{{>navbar}}
+   <div class="body-content row">
+        <div class="col-md-5">Asignar requerimiento al proyecto</div>
+        <div class="col-md-7 card p-5">
+            <div class="row g-1">
+                <div class="col">
+                    <label class="form-label" for="projectID">ID del proyecto</label>
+                    <div class="input-group input-group-sm mb-3 form-outline">
+                        <input type="text" class="form-control" placeholder="Buscar ID de proyecto">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="requirementName">Nombre del requerimiento</label>
+                        <input type="text" id="requirementName" class="form-control" placeholder="Asignar un nombre al requerimiento" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary mt-3" style="width: 40%;">ASIGNAR REQUERIMIENTO</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
