@@ -5,7 +5,7 @@
     <desc>Created with Sketch.</desc>
     <defs>
       <radialGradient id="RadialGradient1">
-        <stop offset="0%" stop-color="red"/>
+        <stop offset="2%" stop-color="red"/>
         <stop offset="100%" stop-color="blue"/>
       </radialGradient>
       <radialGradient id="RadialGradient2" cx="0.25" cy="0.25" r="0.25">
