@@ -18643,9 +18643,10 @@ html {
 }
 
 .home {
-  background: url("../images/banner-bg.svg");
+  background: url(../images/banner-bg2.svg);
   background-repeat-y: no-repeat;
-  background-position: 0 -50px;
+  background-repeat: no-repeat;
+  background-position: 600px 50px;
   padding-top: 103px;
 }
 

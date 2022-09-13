@@ -25,6 +25,8 @@ const loginWithEth = async () => {
   if (window.web3) {
     try {
       // get the user's ethereum account - prompts metamask to login
+      window.localStorage.setItem("userWalletAddress", null);
+      window.userWalletAddress = null
       const selectedAccount = await window.ethereum
         .request({
           method: "eth_requestAccounts",
@@ -108,10 +110,10 @@ const getWalletBalance = async () => {
   const balance = await window.web3.eth.getBalance(window.userWalletAddress);
 
   // convert the balance to ether
-  document.querySelector(".wallet-balance").innerHTML = web3.utils.fromWei(
+  /* document.querySelector(".wallet-balance").innerHTML = web3.utils.fromWei(
     balance,
     "ether"
-  );
+  ); */
 };
 
 // web3 logout function
