@@ -11,25 +11,33 @@
     <link rel="stylesheet" href="vendors/jquery-flipster/css/jquery.flipster.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="fa/font-awesome.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    {{>navbar}}
     <div class="body-content row">
-        <div class="col-md-5">Crea un proyecto</div>
+        <div class="col-md-5">Asignar estado a proyecto proyecto</div>
         <div class="col-md-7 card p-5">
             <div class="row g-1">
                 <div class="col">
-                    <div class="form-outline">
-                        <label class="form-label" for="projectID">ID del proyecto</label>
-                        <input type="text" id="projectID" class="form-control fa fa-search">
-                        <small id="idHelp" class="form-text text-muted">*Campo inmodificable</small>
+                    <label class="form-label" for="projectID">ID del proyecto</label>
+                    <div class="input-group input-group-sm mb-3 form-outline">
+                        <input type="text" class="form-control p-3" placeholder="Buscar ID de proyecto">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"
+                                    aria-hidden="true"></i></button>
+                        </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-outline">
                         <label class="form-label" for="projectName">Nombre del proyecto</label>
-                        <input type="text" id="projectName" class="form-control"
-                            placeholder="Asignar un nombre al proyecto" />
+                        <select class="form-select p-2">
+                            <option selected>Seleccionar estado</option>
+                            <option value="Created">Creado</option>
+                            <option value="inProcess">En proceso</option>
+                            <option value="Close">Cerrado</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -37,7 +45,7 @@
             <hr />
 
             <div class="text-center">
-                <button type="submit" class="btn btn-primary mt-4" style="width: 40%;">CREAR PROYECTO</button>
+                <button type="submit" class="btn btn-primary mt-1" style="width: 40%;">ASIGNAR ESTADO</button>
             </div>
         </div>
     </div>

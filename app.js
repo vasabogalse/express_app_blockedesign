@@ -8,6 +8,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const createProjectRouter = require('./routes/createProject');
 const assignStateRouter = require('./routes/assignState');
+const assignRequirementRouter = require('./routes/assignRequirement');
 //const { hasSubscribers } = require('diagnostics_channel');
 const directoryPartials = path.join(__dirname, 'partials');
 
@@ -33,6 +34,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/createProject', createProjectRouter);
 app.use('/assignState', assignStateRouter);
+app.use('/assignRequirement', assignRequirementRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
