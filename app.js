@@ -6,10 +6,15 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var createProjectRouter = require('./routes/createProject');
+//const { hasSubscribers } = require('diagnostics_channel');
+const directoryPartials = path.join(__dirname, 'partials');
 
-var app = express();
+const app = express();
+const hbs = require('hbs');
 
 // view engine setup
+hbs.registerPartials(directoryPartials);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
@@ -22,6 +27,7 @@ app.use('/public/stylesheets', express.static(__dirname + '/node_modules/bootstr
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/createProject', createProjectRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
