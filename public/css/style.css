@@ -18646,8 +18646,10 @@ html {
   background: url(../images/banner-bg2.svg);
   background-repeat-y: no-repeat;
   background-repeat: no-repeat;
-  background-position: 600px 50px;
-  padding-top: 103px;
+  background-position: right;
+  /*padding-top: 103px;*/
+  margin-top: 50px;
+  padding: 0;
 }
 
 @media (max-width: 991px) {
@@ -18680,7 +18682,8 @@ html {
 }
 
 section {
-  padding: 120px 0 0 0;
+  /*padding: 70px 0 0 0;*/
+  background-color: #E2EFFF;
 }
 
 @media (max-width: 1024px) {
