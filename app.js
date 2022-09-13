@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var createProjectRouter = require('./routes/createProject');
+var assignStateRouter = require('./routes/assignState');
 //const { hasSubscribers } = require('diagnostics_channel');
 const directoryPartials = path.join(__dirname, 'partials');
 
@@ -25,9 +26,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/public/stylesheets', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 
+app.use('/fa', express.static(path.join(__dirname, '/node_modules/font-awesome/css')));
+app.use('/fonts', express.static(path.join(__dirname, '/node_modules/font-awesome/fonts')));
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/createProject', createProjectRouter);
+app.use('/assignState', assignStateRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
