@@ -10840,14 +10840,14 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #1998ff;
-  border-color: #1998ff;
+  background-color: #F22E76;
+  border-color: #F22E76;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #0085f2;
-  border-color: #007ee5;
+  background-color: #f44a88;
+  border-color: #f44a88;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
@@ -10856,15 +10856,15 @@ fieldset:disabled a.btn {
 
 .btn-secondary.disabled, .btn-secondary:disabled {
   color: #fff;
-  background-color: #1998ff;
-  border-color: #1998ff;
+  background-color: #f44a88;
+  border-color: #f44a88;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #007ee5;
-  border-color: #0077d8;
+  background-color: #f44a88;
+  border-color: #f44a88;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
@@ -12504,7 +12504,7 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background: #3c37f1;
+  background: #ffffff;
   height: 0.5rem;
 }
 
@@ -12521,6 +12521,7 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
+  margin-left: -2.5rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -18262,7 +18263,7 @@ input:focus {
 /* Typography */
 body {
   font-size: 0.937rem;
-  font-family: "Montserrat", "open-sans";
+  font-family: "Montserrat","Monserrat Extra Bold", "open-sans";
   font-weight: initial;
   line-height: normal;
   -webkit-font-smoothing: antialiased;
@@ -18450,7 +18451,8 @@ h6, .h6 {
 .navbar {
   width: 100%;
   padding: 1.875rem 1rem;
-  background: #3c37f1;
+  background: #ffffff;
+  color: black;
 }
 
 @media (max-width: 991px) {
@@ -18509,7 +18511,7 @@ h6, .h6 {
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #fff;
+  color: #000;
   font-size: 0.937rem;
   font-weight: 500;
   padding: 0.625rem 1.25rem;
@@ -18652,6 +18654,22 @@ html {
   padding: 0;
 }
 
+.block1 {
+  transform: rotate(45deg);
+  scale: 0.5;
+  position: relative;
+  right: -6rem;
+}
+
+.block2 {
+  transform: rotate(45deg);
+  scale: 0.9;
+  position: relative;
+  right: -5rem;
+  bottom: -8rem;
+}
+
+
 @media (max-width: 991px) {
   .home {
     padding-top: 71px;
@@ -18659,10 +18677,11 @@ html {
 }
 
 .main-banner {
-  padding: 4.2rem 0 14rem 0;
-  color: #ffffff;
-  background-size: cover;
+    padding: 4.2rem 0 10rem 0;
+    color: #000000;
+    background-size: cover;
 }
+
 
 @media (max-width: 991px) {
   .main-banner {

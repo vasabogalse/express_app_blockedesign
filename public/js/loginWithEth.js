@@ -27,7 +27,7 @@ const loginWithEth = async () => {
       // get the user's ethereum account - prompts metamask to login
       window.localStorage.setItem("userWalletAddress", null);
       window.userWalletAddress = null
-      const selectedAccount = await window.ethereum
+      await window.ethereum
         .request({
           method: "eth_requestAccounts",
         })
@@ -42,7 +42,7 @@ const loginWithEth = async () => {
         });
 
       // userWalletAddress variable to selected account
-      console.log(window.userWalletAddress)
+      //console.log(window.userWalletAddress)
 
       // show the user dashboard
       showUserDashboard();
